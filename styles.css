@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+
+:root{
+    /* Primary colors */
+    --Dark-Blue : #2d314d;
+    --Lime-Green: #31d35c;
+    --Bright-Cyan: #2bb7da;
+    /* Neutral colors */
+    --Grayish-Blue: #9698a6;
+    --Light-Grayish-Blue: #f3f4f6;
+    --Very-Light-Gray: #fafafa;
+    --White: #ffffff;
+    /* Font size */
+    --font-size : 18px;
+    /* font family */
+    --family : 'Public Sans', sans-serif;
+    /* font weight */
+    --light : 300 ;
+    --bold : 400 ;
+    --bolder : 700 ;
+} 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--family);
+    font-weight: var(--bold);
+}
+body{
+    background-color: var(--Very-Light-Gray);
+}
+.container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+}
+.logo{
+    margin: 1rem;
+    padding: 1rem 0 0 7rem;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+    padding: 0px 10px 20px 10px;
+}
+.nav a:hover{
+    border-style: hidden hidden solid hidden;
+    border: 0px 0px 0px 1px;
+    border-color: var(--Lime-Green);
+}
+.card button{
+    background-image: linear-gradient(to right , #31d35c , #2bb7da);
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 25px;
+    color: var(--White);
+    font-weight: var(--bolder);
+    margin-right: 8rem;
+    cursor: pointer;
+}
+.nav-icon{
+    display: none;
+}
+@media screen and (max-width : 768px) {
+    .logo{
+        padding: 1rem 0 0 2rem;
+    }
+    .card button{
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width : 425px) {
+  
+    .nav{
+        position: absolute;
+        top: 70px;
+        left: 20vw;
+    }
+    .nav-icon{
+        display: block;
+        position: relative;
+        left: 20vw  ;
+        cursor: pointer;
+    }
+    .nav ul {
+        display: none;
+    }
+    .nav ul li {
+        margin: 10px 100px 10px 100px;
+    }
+    .nav a:hover{
+        border-style: none;
+    }
+    .card button{
+        display: none;
+    }
+}

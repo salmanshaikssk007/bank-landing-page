@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favpng_vector-graphics-illustration-clip-art-favicon.png">
+  <link href="/Prerequesties/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
   
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>bank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./utilites.css">
+  <link rel="stylesheet" href="./styles.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,7 +19,29 @@
 </head>
 <body>
 
-  Home
+      <!--  Header of the Landing Page  -->
+
+      <header class="header">
+        <div class="logo"><img src="./images/logo.svg" alt="Page logo"></div>
+        <i class="fas fa-bars nav-icon" id="bars"></i>
+        <div class="nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Carrers</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <Button id="button" type="submit">Request Invite</Button>
+        </div>
+      </header>
+
+      <!-- Body of the Landing Page -->
+
+      <!-- Footer of the Landing Page -->
+  <!-- Home
   About
   Contact
   Blog
@@ -91,11 +116,7 @@
 
   Request Invite
 
-  © Easybank. All Rights Reserved
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  © Easybank. All Rights Reserved -->
+  <script src="./main.js"></script>
 </body>
 </html>
