@@ -2,10 +2,10 @@
 const bars = document.getElementById('bars');
 const nav = document.querySelector('.nav ul');
 // functions 
-const showDisplay = () =>{
+const toggleDisplay = () =>{
     nav.classList.toggle('card');
     if(nav.classList.contains('card')){
-        nav.style.display = 'block';
+       nav.style.display = 'block';
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }else{
         nav.style.display = 'none';
@@ -13,5 +13,5 @@ const showDisplay = () =>{
     }
 }
 // events
-bars.addEventListener('click',showDisplay);
+bars.addEventListener('click',toggleDisplay);
 

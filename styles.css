@@ -1,47 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
 
-:root{
-    /* Primary colors */
-    --Dark-Blue : #2d314d;
-    --Lime-Green: #31d35c;
-    --Bright-Cyan: #2bb7da;
-    /* Neutral colors */
-    --Grayish-Blue: #9698a6;
-    --Light-Grayish-Blue: #f3f4f6;
-    --Very-Light-Gray: #fafafa;
-    --White: #ffffff;
-    /* Font size */
-    --font-size : 18px;
-    /* font family */
-    --family : 'Public Sans', sans-serif;
-    /* font weight */
-    --light : 300 ;
-    --bold : 400 ;
-    --bolder : 700 ;
-} 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: var(--family);
-    font-weight: var(--bold);
-}
-body{
-    background-color: var(--Very-Light-Gray);
-}
-.container {
-    padding-right: 4rem;
-    padding-left: 4rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--White);
-}
 .logo{
     margin: 1rem;
     padding: 1rem 0 0 7rem;
@@ -54,6 +11,7 @@ body{
 .nav ul li a{
     text-decoration: none;
     color: var(--Grayish-Blue);
+    z-index: 10;
     padding: 0px 10px 20px 10px;
 }
 .nav a:hover{
@@ -61,7 +19,7 @@ body{
     border: 0px 0px 0px 1px;
     border-color: var(--Lime-Green);
 }
-.card button{
+#button{
     background-image: linear-gradient(to right , #31d35c , #2bb7da);
     padding: 15px 20px 15px 20px;
     border: none;
@@ -70,15 +28,65 @@ body{
     font-weight: var(--bolder);
     margin-right: 8rem;
     cursor: pointer;
+    z-index: 10;
+}
+#button:hover{
+
+    opacity: 0.5;
 }
 .nav-icon{
     display: none;
+}
+.head-image{
+    left: 100px;
+}
+.head-text{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.head-text h1{
+    font-weight:var(--bolder);
+    font-size: 40px;
+    padding:  30px 0;
+}
+.head-text p{
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    line-height: 20px;
+    padding: 20px 0;
+}
+.second-block h1{
+    font-weight: var(--bolder);
+}
+.second-block p {
+    color: var(--Grayish-Blue);
+    padding: 50px 0 50px 0;
+    font-size: 1.3rem;
+}
+.details{
+    padding: 0 20px 0 20px;
+}
+.details h2{
+  font-weight:700;
+  margin: 50px 0 50px 0;
+}
+.details p {
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+    font-weight: var(--bolder);
+}
+footer{
+    background-color:var( --Dark-Blue);
+}
+footer .logo{
+    background: transparent;
 }
 @media screen and (max-width : 768px) {
     .logo{
         padding: 1rem 0 0 2rem;
     }
-    .card button{
+    #button{
         margin-right: 2rem;
     }
 }
@@ -104,7 +112,10 @@ body{
     .nav a:hover{
         border-style: none;
     }
-    .card button{
+    #button{
+        display: none;
+    }
+    .head-image{
         display: none;
     }
 }
