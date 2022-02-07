@@ -37,6 +37,9 @@
 .nav-icon{
     display: none;
 }
+.about{
+    background-color: var(--White);
+}
 .head-image{
     left: 100px;
 }
@@ -76,15 +79,92 @@
     line-height: 25px;
     font-weight: var(--bolder);
 }
-footer{
-    background-color:var( --Dark-Blue);
+h4{
+    font-weight: 400;
+    font-size: 30px;
+    padding: 100px 0 100px 0;
 }
-footer .logo{
-    background: transparent;
+.articles{
+    padding: 0 25px 20px 0;
+    border-radius: 25px;
+}
+.articles span{
+    font-size: 10px;
+    color: var(--Grayish-Blue);
+    padding: 15px 0 15px 0;
+}
+.articles a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+.articles p{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 20px 0 20px 0;
+    color: var(--Grayish-Blue);
+    line-height: 20px;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+footer{
+
+    background-color:var( --Dark-Blue);
+    padding: 50px 0 50px 0;
+}
+footer .end-logo{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--White);
+}
+.social ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    top: 30px;
+}
+.social ul li {
+    padding: 0 3px 0px 3px;
+}
+.social ul li a{
+   
+    color: var(--White);
+}
+.social ul li a:hover{
+    
+    color: var(--Lime-Green);
+}
+.footer-details ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-details ul li a:hover{
+    color:var(--Lime-Green);
+    text-decoration: none;
+}
+.footer-details ul li{
+list-style: none;
+
+}
+.end-credits{
+    color: #fff;
 }
 @media screen and (max-width : 768px) {
     .logo{
         padding: 1rem 0 0 2rem;
+    }
+    .second-block{
+        grid-row: 1/4;
     }
     #button{
         margin-right: 2rem;

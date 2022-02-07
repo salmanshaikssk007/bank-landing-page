@@ -42,6 +42,9 @@ body{
     border-radius: 10px;
     background-color: var(--White);
 }
+.footer-details{
+
+}
 .container {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -61,7 +64,6 @@ body{
 .wrapper-2{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #fff;
     width: 100%;
     gap: 10px;
 }
@@ -70,6 +72,12 @@ body{
     grid-template-columns: repeat(4 , 1fr);
 }
 @media screen and (max-width : 768px) {
+    .container{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        margin-right: 0rem;
+        margin-left: 2rem;
+    }
     
 }
 @media screen and (max-width : 425px){
