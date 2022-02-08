@@ -200,10 +200,14 @@ list-style: none;
         font-weight: 400;
 
     }
+    .about{
+        text-align: center;
+    }
     .nav{
         position: absolute;
         top: 70px;
         left: 20vw;
+        z-index: 110;
     }
     .nav-icon{
         display: block;
@@ -212,21 +216,34 @@ list-style: none;
         cursor: pointer;
         z-index: 100;
     }
+    .head-text{
+        text-align: center;
+        order: 1;
+    }
     .desktop-image{
         display: none;
     }
+    .header4{
+        text-align: center;
+    }
+    .articles{
+        text-align: center;
+    }
     .mobile-image{
-        display:block
+        display:block;
     }
     .nav ul {
-        z-index: 1000;
+       
         display: none;
     }
     .nav ul li {
+        
         margin: 10px 100px 10px 100px;
     }
     .nav ul li a{
-        color: red;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 1000;
     }
     .nav ul li a:hover{
         color: #fff;
@@ -237,5 +254,9 @@ list-style: none;
     }
     .head-image{
         display: none;
+    }
+    .footer-details{
+        padding: 20px 0 0px 0;
+        text-align: center;
     }
 }
