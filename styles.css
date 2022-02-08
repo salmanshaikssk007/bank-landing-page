@@ -19,6 +19,9 @@
     border: 0px 0px 0px 1px;
     border-color: var(--Lime-Green);
 }
+.mobile-image{
+    display: none;
+}
 #button{
     background-image: linear-gradient(to right , #31d35c , #2bb7da);
     padding: 15px 20px 15px 20px;
@@ -124,6 +127,7 @@ footer .end-logo{
     font-weight: 400;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--White);
+    opacity: 0.4;
 }
 .social ul{
     position: relative;
@@ -137,20 +141,26 @@ footer .end-logo{
     padding: 0 3px 0px 3px;
 }
 .social ul li a{
-   
+   opacity: 0.3;
     color: var(--White);
 }
 .social ul li a:hover{
     
     color: var(--Lime-Green);
+    opacity: 1;
 }
 .footer-details ul li a{
+    
     color: #fff;
+    font-size: 10px;
+    font-weight: 400;
     text-decoration: none;
+    opacity: 0.5;
 }
 .footer-details ul li a:hover{
     color:var(--Lime-Green);
     text-decoration: none;
+    opacity: 1;
 }
 .footer-details ul li{
 list-style: none;
@@ -158,6 +168,7 @@ list-style: none;
 }
 .end-credits{
     color: #fff;
+    opacity: 0.4;
 }
 @media screen and (max-width : 768px) {
     .logo{
@@ -171,7 +182,24 @@ list-style: none;
     }
 }
 @media screen and (max-width : 425px) {
-  
+    .display-nav{
+        display: block;
+        z-index: 101;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .backdrop{
+        position: fixed;
+
+        width: 100%;
+        height: 100%;  
+        background: rgba(0,0,0,0.7);z-index: 100;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
     .nav{
         position: absolute;
         top: 70px;
@@ -180,19 +208,31 @@ list-style: none;
     .nav-icon{
         display: block;
         position: relative;
-        left: 20vw  ;
+        left: -1.9rem;
         cursor: pointer;
+        z-index: 100;
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display:block
     }
     .nav ul {
+        z-index: 1000;
         display: none;
     }
     .nav ul li {
         margin: 10px 100px 10px 100px;
     }
-    .nav a:hover{
+    .nav ul li a{
+        color: red;
+    }
+    .nav ul li a:hover{
+        color: #fff;
         border-style: none;
     }
-    #button{
+    .header-button{
         display: none;
     }
     .head-image{

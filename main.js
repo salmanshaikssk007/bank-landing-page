@@ -1,15 +1,18 @@
 // get elements
 const bars = document.getElementById('bars');
 const nav = document.querySelector('.nav ul');
+const backDrop = document.getElementById('backdrop');
 // functions 
 const toggleDisplay = () =>{
     nav.classList.toggle('card');
+    backDrop.classList.toggle('backdrop');
     if(nav.classList.contains('card')){
        nav.style.display = 'block';
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      
+       
     }else{
         nav.style.display = 'none';
-        document.body.style.backgroundColor = '#fafafa';
+       
     }
 }
 // events
